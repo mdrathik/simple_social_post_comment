@@ -1,0 +1,514 @@
+.body{
+    background-color: #E0E0E0;
+}
+.head_title{
+    margin: 0;
+    padding: 0px;
+}
+.main_body {
+    background-color: #FFF;
+    height: 480px;
+    border: 2px seashell;
+    border-radius: 4px;
+    overflow-y: auto;
+}
+.up_button_div{
+    text-align: center;
+}
+
+
+/*comment*/
+.main_status {
+    background-color: #FFF;
+    height: auto;
+    border: 2px seashell;
+    border-radius: 4px;
+}
+
+.scroll_divx{
+    margin-left: 30px;
+    background-color: #FFF;
+    min-height: 130px;
+    max-height: 350px;
+    border: 2px seashell;
+    border-radius: 4px;
+    overflow-y: auto;
+    word-wrap: break-word;
+}
+
+.commentor{
+    margin-right: 20px;
+    font-size: 16px;
+}
+.comment_text{
+    font-size: 13px;
+}
+
+/*comment end*/
+#scroll_div {
+    margin-top: 10px;
+    overflow-y: auto;
+    word-wrap: break-word;
+}
+.post_div{
+    margin:6px;
+    box-shadow:  1px 2px 2px #9E9E9E;
+    border-radius: 3px;
+}
+.post_div h4{
+    margin: 5px;
+    color: #5cb3fd;
+    font-weight: bold;
+}
+.post_div .status{
+     margin: 5px;
+     color: #101112;
+     font-size: 14px;
+}
+
+.post_div .datetime{
+    margin-bottom: 10px;
+    margin-left: 5px;
+    color: lightslategray;
+    font-weight: bold;
+    font-size: 11px;
+}
+.btn1 {
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 10px;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+.btn2 {
+    font-weight: bold;
+    font-size: 10px;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+.btn2 {
+    font-weight: bold;
+    font-size: 10px;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+.btn3 {
+    font-weight: bold;
+    font-size: 10px;
+    margin-top: 10px;
+    background-color: dodgerblue;
+    margin-bottom:10px;
+    margin-right: 10px;
+    float: right;
+}
+
+.btn1x {
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+.btn1x:hover{
+    background-color: grey;
+    transition: 1s;
+}
+.btn2x {
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+.btn2x:hover{
+    background-color: grey;
+    transition: 1s;
+}
+.btn2x {
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+.btn3x {
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 10px;
+    background-color: dodgerblue;
+    margin-bottom:10px;
+    margin-right: 10px;
+}
+.btn3x:hover{
+    background-color: grey;
+    transition: 1s;
+}
+
+
+
+
+
+
+
+
+
+
+.widget-area {
+    margin-bottom: 20px;
+    background-color: #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+    -ms-box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+    -o-box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+    float: left;
+    margin-top: 20px;
+    padding: 7px 10px;
+    position: relative;
+    width: 90%;
+}
+.status-upload {
+    background: none repeat scroll 0 0 #f5f5f5;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    float: left;
+    width: 100%;
+}
+.status-upload form {
+    float: left;
+    width: 100%;
+}
+.status-upload form textarea {
+    background: none repeat scroll 0 0 #fff;
+    border: medium none;
+    -webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    -ms-border-radius: 4px 4px 0 0;
+    -o-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+    color: #777777;
+    float: left;
+    font-family: Lato;
+    font-size: 14px;
+    height: 100px;
+    letter-spacing: 0.3px;
+    padding: 10px;
+    width: 100%;
+    resize:vertical;
+    outline:none;
+    border: 1px solid #F2F2F2;
+}
+
+.status-upload ul {
+    float: left;
+    list-style: none outside none;
+    margin: 0;
+    font-size: 14px;
+    padding: 0 0 0 10px;
+    width: auto;
+}
+.status-upload ul > li {
+    float: left;
+}
+.status-upload ul > li > a {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    color: #777777;
+    float: left;
+    font-size: 14px;
+    height: 4px;
+    line-height: 30px;
+    margin: 10px 0 10px 10px;
+    text-align: center;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -ms-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    width: 30px;
+    cursor: pointer;
+}
+.status-upload ul > li > a:hover {
+    background: none repeat scroll 0 0 #606060;
+    color: #fff;
+}
+
+.status-upload form button {
+    border: medium none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    color: #fff;
+    float: right;
+    font-family: Lato;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    margin-right: 9px;
+    margin-top: 9px;
+    padding: 6px 15px;
+}
+.dropdown > a > span.green:before {
+    border-left-color: #2dcb73;
+}
+.status-upload form button > i {
+    margin-right: 7px;
+}
+.input-group .form-control{
+    font-weight: bold;
+    color: #01549b;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 550px) {
+    .head_title{
+        margin-top: 2px;
+        font-size: 22px;
+    }
+    .main_body {
+        background-color: #FFF;
+        height: 480px;
+        border: 2px seashell;
+        border-radius: 4px;
+        overflow-y: auto;
+    }
+    .up_button_div{
+        text-align: center;
+    }
+    #scroll_div {
+        margin-top: 4px;
+        overflow-y: auto;
+        word-wrap: break-word;
+    }
+    .post_div{
+        margin:1px;
+        box-shadow:  1px 2px 2px #9E9E9E;
+        border-radius: 3px;
+    }
+    .post_div h4{
+        margin: 1px;
+        color: #5cb3fd;
+        font-weight: bold;
+    }
+    .post_div .status{
+        margin: 1px;
+        color: #101112;
+        font-size: 12px;
+    }
+
+    .post_div .datetime{
+        margin-bottom: 2px;
+        margin-left: 1px;
+        color: lightslategray;
+        font-weight: bold;
+        font-size: 10px;
+    }
+    .btn1 {
+        font-weight: bold;
+        font-size: 8px;
+        margin-top: 4px;
+        margin-bottom:4px;
+    }
+    .btn2 {
+        font-weight: bold;
+        font-size: 8px;
+        margin-top: 4px;
+        margin-bottom:4px;
+    }
+    .btn2 {
+        font-weight: bold;
+        font-size: 8px;
+        margin-top: 4px;
+        margin-bottom:4px;
+    }
+    .btn3 {
+        font-weight: bold;
+        font-size: 8px;
+        margin-top: 4px;
+        background-color: dodgerblue;
+        margin-bottom:4px;
+    }
+
+
+
+
+    .widget-area {
+        margin-bottom: 15px;
+        background-color: #fff;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        border-radius: 4px;
+        -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+        -moz-box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+        -ms-box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+        -o-box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+        box-shadow: 0 0 16px rgba(0, 0, 0, 0.05);
+        float: left;
+        margin-top: 5px;
+        padding: 2px 4px;
+        position: relative;
+        width: 100%;
+    }
+    .status-upload {
+        background: none repeat scroll 0 0 #f5f5f5;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        border-radius: 4px;
+        float: left;
+        width: 100%;
+    }
+    .status-upload form {
+        float: left;
+        width: 100%;
+    }
+    .status-upload form textarea {
+        background: none repeat scroll 0 0 #fff;
+        border: medium none;
+        -webkit-border-radius: 4px 4px 0 0;
+        -moz-border-radius: 4px 4px 0 0;
+        -ms-border-radius: 4px 4px 0 0;
+        -o-border-radius: 4px 4px 0 0;
+        border-radius: 4px 4px 0 0;
+        color: #777777;
+        float: left;
+        font-family: Lato;
+        font-size: 14px;
+        height: 100px;
+        letter-spacing: 0.3px;
+        padding: 10px;
+        width: 100%;
+        resize:vertical;
+        outline:none;
+        border: 1px solid #F2F2F2;
+    }
+
+    .status-upload ul {
+        float: left;
+        list-style: none outside none;
+        margin: 0;
+        font-size: 14px;
+        padding: 0 0 0 10px;
+        width: auto;
+    }
+    .status-upload ul > li {
+        float: left;
+    }
+    .status-upload ul > li > a {
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        border-radius: 4px;
+        color: #777777;
+        float: left;
+        font-size: 14px;
+        height: 4px;
+        line-height: 30px;
+        margin: 10px 0 10px 10px;
+        text-align: center;
+        -webkit-transition: all 0.4s ease 0s;
+        -moz-transition: all 0.4s ease 0s;
+        -ms-transition: all 0.4s ease 0s;
+        -o-transition: all 0.4s ease 0s;
+        transition: all 0.4s ease 0s;
+        width: 30px;
+        cursor: pointer;
+    }
+    .status-upload ul > li > a:hover {
+        background: none repeat scroll 0 0 #606060;
+        color: #fff;
+    }
+
+    .status-upload form button {
+        border: medium none;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+        border-radius: 4px;
+        color: #fff;
+        float: right;
+        font-family: Lato;
+        font-size: 14px;
+        letter-spacing: 0.3px;
+        margin-right: 9px;
+        margin-top: 9px;
+        padding: 6px 15px;
+    }
+    .dropdown > a > span.green:before {
+        border-left-color: #2dcb73;
+    }
+    .status-upload form button > i {
+        margin-right: 7px;
+    }
+
+    .btn1x {
+        font-weight: bold;
+        font-size: 12px;
+        margin-top: 4px;
+    }
+    .btn2x {
+        font-weight: bold;
+        font-size: 12px;
+        margin-top: 4px;
+    }
+    .btn2x {
+        font-weight: bold;
+        font-size: 12px;
+        margin-top: 4px;
+    }
+    .btn3x {
+        font-weight: bold;
+        font-size: 12px;
+        margin-top: 1px;
+        background-color: dodgerblue;
+        margin-bottom:2px;
+    }
+
+}
+
+
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
