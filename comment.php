@@ -71,7 +71,7 @@ if(isset($_POST['delete'])){
 </head>
 <body class="body">
 <div class="container">
-    <h2 class="head_title text-center">The Good Of Singapore</h2>
+    <h2 class="head_title text-center">The Of Singapore</h2>
     <div class="col-md-12">
 
     </div>

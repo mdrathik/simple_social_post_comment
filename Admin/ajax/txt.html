@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="text/javascript" src="jquery.js"></script>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <title>Login Form</title>
+    <script type="text/javascript">
+        $("#login_form").submit(function()
+        {
+            //remove all the class add the messagebox classes and start fading
+            $("#msgbox").removeClass().addClass('messagebox').text('Validating....').fadeIn(1000);
+            //check the username exists or not from ajax
+            $.post("ajax_login.php",{ user_name:$('#username').val(),password:$('#password').val(),rand:Math.random() } ,function(data)
+            {
+                if(data=='yes') //if correct login detail
+                {
+                    $("#msgbox").fadeTo(200,0.1,function()  //start fading the messagebox
+                    {
+                        //add message and change the class of the box and start fading
+                        $(this).html('Logging in.....').addClass('messageboxok').fadeTo(900,1,
+                                function()
+                                {
+                                    //redirect to secure page
+                                    document.location='secure.php';
+                                });
+                    });
+                }
+                else
+                {
+                    $("#msgbox").fadeTo(200,0.1,function() //start fading the messagebox
+                    {
+                        //add message and change the class of the box and start fading
+                        $(this).html('Your login detail sucks...').addClass('messageboxerror').fadeTo(900,1);
+                    });
+                }
+            });
+            return false;//not to post the  form physically
+        });
+    </script>
+</head>
+<body>
+<?php session_start(); ?>
+<div id="profile">
+    <?php
+   	if(isset($_SESSION['user_name'])){
+			?>
+    <a href='logout.php'>Logout</a>
+    <?php } ?>
+</div>
+</body>
+<?php
+if(empty($_SESSION['user_name'])){?>
+
+
+<div class="container" >
+    <section id="content">
+        <form method="post" action="" id="login_form">
+            <div align="center">
+                <div class="top" > A fancy ajax login usin jQuery - <strong style="color:#FF0000">Use &quot;admin&quot; as username and &quot;roshan&quot; as password </strong></div>
+
+                <div >
+                    User Name : <input name="username" type="text" id="username" value="" maxlength="20" />
+
+                </div>
+                <div style="margin-top:5px" >
+                    Password :
+                    &nbsp;&nbsp;
+                    <input name="password" type="password" id="password" value="" maxlength="20" />
+
+                </div>
+                <div class="buttondiv">
+                    <input name="Submit" type="submit" id="submit" value="Login" style="margin-left:-10px; height:23px"  /> <span id="msgbox" style="display:none"></span>
+
+                </div>
+
+            </div>
+        </form>
+        <div class="button">
+
+        </div><!-- button -->
+    </section><!-- content -->
+</div>
+<?php }?>
+<!-- container -->
+</html>
